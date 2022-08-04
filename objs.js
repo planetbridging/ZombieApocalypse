@@ -1,4 +1,4 @@
-export class objZombie {
+class objZombie {
   constructor(x, y, color) {
     this.x = x;
     this.y = y;
@@ -7,3 +7,7 @@ export class objZombie {
     this.color = color;
   }
 }
+
+module.exports = {
+  objZombie,
+};
