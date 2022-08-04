@@ -1,0 +1,22 @@
+{
+  "name": "zombieapocalypse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetbridging/ZombieApocalypse.git"
+  },
+  "author": "Samuel Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/planetbridging/ZombieApocalypse/issues"
+  },
+  "homepage": "https://github.com/planetbridging/ZombieApocalypse#readme",
+  "dependencies": {
+    "pathfinding": "^0.4.18"
+  }
+}
