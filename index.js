@@ -5,7 +5,7 @@ var uuid = require("uuid");
 const { objZombie } = require("./objs");
 
 //lists
-var lstDeers = [];
+var lstDeers = []; //contents = x,y,uuid per item
 var lstZombies = [];
 
 var matrix = [
@@ -68,6 +68,14 @@ function turnDeerToZombie() {
           new objZombie(lstDeers[d][0], lstDeers[d][1], randomColor)
         );
         lstDeleteDeerPile.push(lstDeers[d][2]);
+      }
+    }
+  }
+  for (var p in lstDeleteDeerPile) {
+    for (var d in lstDeers) {
+      if (lstDeleteDeerPile[p] == lstDeers[d][2]) {
+        lstDeers.splice(d, 1);
+        break;
       }
     }
   }
