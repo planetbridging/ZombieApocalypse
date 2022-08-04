@@ -69,7 +69,7 @@ import { AiOutlineMinus } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
 import { MdOutlineMaximize } from "react-icons/md";
 
-//import * as dates from "./dates";
+import * as dates from "./dates";
 
 export class MagicTime extends React.Component {
   state = {

@@ -44,7 +44,7 @@ export function gridToTable(grid, items) {
       var tdTile = "";
 
       if (grid[r][c] == 1) {
-        tdTile = this.getImg(tree);
+        tdTile = <Image src={tree} alt="" w="5" h="5" zIndex={2} />;
       }
 
       var zombieOrDeer = "";
@@ -67,12 +67,13 @@ export function gridToTable(grid, items) {
       var thing = "";
       switch (zombieOrDeer) {
         case "z":
-          thing = this.getImg(zombie);
+          thing = <Image src={zombie} alt="" w="5" h="5" zIndex={2} />;
           break;
         case "d":
-          thing = this.getImg(deer);
+          thing = <Image src={deer} alt="" w="5" h="5" zIndex={2} />;
           break;
       }
+      //console.log(zombieOrDeer);
       var topBuffer = 100;
       var leftBuffer = 20;
       lstTr.push(
