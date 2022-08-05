@@ -14,3 +14,4 @@ Make sure you have docker and docker-compose installed then cd into the folder a
 - Encryption stuff
 - nodejs
 - Zombies eating deers I mean chakra-ui
+- Path finding
